@@ -1,0 +1,35 @@
+{
+  "robot": "go1",
+  "checkpoint_iteration": 67250,
+  "randomized": false,
+  "zero_action": false,
+  "seed": 2027,
+  "command": [
+    0.20000000298023224,
+    0.0,
+    0.0
+  ],
+  "requested_seconds": 10.0,
+  "episodes": [
+    {
+      "episode": 0,
+      "survived_seconds": 10.0,
+      "fallen": false,
+      "tracking_rmse": 0.017894200031609145,
+      "mean_body_velocity": [
+        0.20705720173862116,
+        0.004949405480530852,
+        0.00044490522377664706
+      ],
+      "displacement_xy": [
+        2.0691914095713946,
+        0.05867511349130542
+      ],
+      "min_height": 0.2879066894185435,
+      "latency_ticks": 0,
+      "failure_reason": null
+    }
+  ],
+  "survival_fraction": 1.0,
+  "mean_tracking_rmse": 0.017894200031609145
+}

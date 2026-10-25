@@ -1,0 +1,55 @@
+{
+  "task": {
+    "robot": "go1",
+    "num_envs": 32,
+    "device": "cuda:0",
+    "dt": 0.01,
+    "substeps": 5,
+    "randomize": true,
+    "episode_seconds": 10.0,
+    "period": 0.6,
+    "max_speed": 0.25,
+    "rsi_probability": 0.8,
+    "clearance": 0.1,
+    "action_scale": 0.6
+  },
+  "training": {
+    "robot": "go1",
+    "num_envs": 32,
+    "updates": 270000,
+    "horizon": 24,
+    "lr": 0.0003,
+    "critic_lr": 0.001,
+    "critic_epochs": 4,
+    "discount_seconds": 1.0,
+    "lam": 0.95,
+    "alpha": 0.95,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "device": "cuda:0",
+    "output": "logs/go1_300000",
+    "nominal": false,
+    "max_speed": 0.25,
+    "rsi": 0.8,
+    "clearance": 0.1,
+    "action_scale": 0.6,
+    "resume": "logs/go1_30000/last.pt",
+    "log_every": 10,
+    "save_every": 50
+  },
+  "checkpoint_iteration": 67250,
+  "history": [
+    {
+      "end_iteration": 30000,
+      "reference_clearance_m": 0.03,
+      "action_scale_rad": 0.25
+    },
+    {
+      "start_iteration": 30000,
+      "target_iteration": 300000,
+      "reference_clearance_m": 0.1,
+      "action_scale_rad": 0.6
+    }
+  ],
+  "notes": "Host-specific paths in checkpoint training metadata were replaced with relative paths; model and optimizer tensors are unchanged. The 30000-iteration source checkpoint is not included."
+}

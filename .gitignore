@@ -1,0 +1,19 @@
+# Local environments and generated training outputs
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+logs/
+runs/
+outputs/
+wandb/
+MUJOCO_LOG.TXT
+.DS_Store
+.env
+.env.*
+# Deliberately keep the small, versioned examples/ checkpoint and video.
